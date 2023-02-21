@@ -24,13 +24,14 @@ let costoBiglietto = distanza * euroChilometro;
 //Stampa a video del prezzo pieno del biglietto
 console.log(`Prezzo pieno: ${costoBiglietto.toFixed(2)}€`)
 
+let sconto = 0;
+
 //controllo attraverso l'eta inserita se l'utente ha diritto ad uno sconto e stampa a video del prezzo in base allo sconto
 if(etaUtente > 0 && etaUtente < 18){
     costoBiglietto *= 0.8;
-    console.log(`Hai ${etaUtente} anni quindi hai diritto ad uno sconto del 20%. Il costo del biglietto è: ${costoBiglietto.toFixed(2)}€`);
+    sconto = 20;
 }else if(etaUtente >= 65){
     costoBiglietto *= 0.6;
-    console.log(`Hai ${etaUtente} anni hai diritto ad uno sconto del 40%. Il costo del biglietto è: ${costoBiglietto.toFixed(2)}€`);
-}else {
-    console.log(`Hai ${etaUtente} anni quindi non rientri nello sconto. Il costo del biglietto è: ${costoBiglietto.toFixed(2)}€`);
+    sconto = 40;
 }
+console.log(`Hai ${etaUtente} anni hai diritto ad un ${sconto}% di sconto. Il costo del biglietto è: ${costoBiglietto.toFixed(2)}€`);
