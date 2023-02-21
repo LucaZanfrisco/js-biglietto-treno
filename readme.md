@@ -9,5 +9,5 @@ va applicato uno sconto del 40% per gli over 65.
 //calcolare il prezzo totale del costo del viaggio
 //verificare l'eta dell'utente 
 // SE etaUtente è minore di 18 anni applicare uno sconto del 20%
-// SE etaUtente è maggiore di 65 anni applicare uno sconto del 65%
+// SE etaUtente è maggiore di 65 anni applicare uno sconto del 40%
 //output fornire il costo del viaggio se viene applicato uno sconto
